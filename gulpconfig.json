@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "localhost/",
+    "proxy": "esvitilna.test/",
     "notify": true
   },
   "browserSyncWatchFiles" : [
@@ -13,7 +13,7 @@
     "css": "./css",
     "img": "./img",
     "imgsrc": "./src/img",
-    "sass": "./sass",
+    "sass": "./src/sass",
     "node": "./node_modules/",
     "bower": "C:/tmp/node_modules/",
     "dev": "./src",
