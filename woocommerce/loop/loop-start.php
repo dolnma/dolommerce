@@ -20,4 +20,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<ul class="products products__wrap col-md-12">
+<ul class="col-xs-12 col-lg-12 products products__wrap">

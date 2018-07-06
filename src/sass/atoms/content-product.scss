@@ -1,0 +1,12 @@
+.content-product {
+
+
+  &__top {
+    display: flex;
+    justify-content: center;
+
+    &__price {
+      margin-left: 30px;
+    }
+  }
+}

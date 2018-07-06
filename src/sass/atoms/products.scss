@@ -1,0 +1,17 @@
+.products {
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    color: $dark-gray;
+  }
+  li {
+    list-style-type: none;
+    text-align: center;
+    border: 0.06em solid #0f0f0f;
+    padding: 1em;
+    margin: 1em;
+  }
+  img {
+    min-height: 300px;
+  }
+}

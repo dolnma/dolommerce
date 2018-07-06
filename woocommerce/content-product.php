@@ -27,7 +27,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li class="col-xl-6 content-product" <?php post_class(); ?>>
+<li class="col-md-12 col-lg-4 content-product" <?php post_class(); ?>>
 
 		<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
@@ -38,10 +38,12 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
 	</div>
 	<div class="content-product__top__price">
-		<?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
+		<?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>	
 	</div>
 </div>
-	<?php echo $product->get_short_description(); ?>
+	<?php echo $product->get_short_description();
+
+	?>
 
 	<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
 
