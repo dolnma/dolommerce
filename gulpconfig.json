@@ -1,7 +1,9 @@
 {
   "browserSyncOptions" : {
-    "proxy": "esvitilna.test/",
-    "notify": true
+    "proxy": "esvitilna.test",
+    "notify": true,
+    "open": "external",
+    "port": 3000
   },
   "browserSyncWatchFiles" : [
     "./css/*.min.css",
@@ -19,6 +21,7 @@
     "dev": "./src",
     "dist": "./dist",
     "distprod": "./dist-product",
-    "vendor": ""
+    "vendor": "",
+    "host": "esvitilna.test"
   }
 }
