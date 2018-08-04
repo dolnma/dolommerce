@@ -1,0 +1,14 @@
+.navbar {
+    &__nav {
+        li {
+            display: inline;
+            padding: 0 0.5rem;
+        }
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: $primary;
+    }
+    a, a:visited {
+        color: $primary;
+    }
+}

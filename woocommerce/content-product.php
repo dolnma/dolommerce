@@ -27,25 +27,25 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li class="col-md-12 col-lg-4 content-product" <?php post_class(); ?>>
+	<li class="content-product col-md-12 col-lg-4" <?php post_class(); ?>>
+		<div class="content-product__wrap">
 
-		<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
+			<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
-		<?php do_action( 'woocommerce_before_shop_loop_item_title' ); ?>
+			<?php do_action( 'woocommerce_before_shop_loop_item_title' ); ?>
 
-<div class="content-product__top">
-	<div class="content-product__top__title">
-		<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
-	</div>
-	<div class="content-product__top__price">
-		<?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>	
-	</div>
-</div>
-	<?php echo $product->get_short_description();
-
-	?>
-
-	<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
-
-
-</li>
+			<div class="content-product__top">
+				<h2 class="content-product__top__title">
+					<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
+				</h2>
+				<div class="content-product__top__price">
+					<?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
+				</div>
+			</div>
+			<h3 class="content-product__top__desc">
+				<?php echo $product->get_short_description(); ?>
+			</h3>
+			
+			<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
+		</div>
+	</li>

@@ -1,10 +1,14 @@
 .header {
-  height: $header-h;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-  background: $dark-gray;
+  width:100%;
+  background: lighten($primary, 75%);
+  border-bottom: 0.0625em solid $primary-dark;
+  &__wrap {
+    display: flex;
+    height: $h-header;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header__logo {

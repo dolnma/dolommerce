@@ -17,7 +17,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapper" id="woocommerce-wrapper">
+<div class="wrapper wrapper--gray" id="woocommerce-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
