@@ -4,7 +4,7 @@
   "description": "WordPress Theme framework",
   "main": "index.js",
   "scripts": {
-    "postinstall": "gulp copy-assets"
+    "kss": "kss --config kss-config.json"
   },
   "engines": {
     "npm": ">=2.1.8"
@@ -55,5 +55,12 @@
     "popper.js": "^1.12.9",
     "run-sequence": "^2.2.1",
     "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp-sass-glob-import": "^0.1.0",
+    "gulp-shell": "^0.6.5",
+    "kss": "^3.0.0-beta.23",
+    "michelangelo": "^0.8.0",
+    "sc5-styleguide": "^2.2.0"
   }
 }

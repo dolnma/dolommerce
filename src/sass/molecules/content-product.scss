@@ -2,10 +2,11 @@
   padding: 1rem;
   &__wrap {
     padding: 1rem;
-    background: $secondary;
+    background: $white;
     border-radius: 1rem;
-    a, a:visited {
-      color: $primary;
+    a,
+    a:visited {
+      color: $secondary;
     }
   }
   &__top {
@@ -13,13 +14,17 @@
     flex-direction: column;
     justify-content: center;
     &__title {
-      font-weight: normal;
+      padding: 0.5em 0;
     }
-    &__price { 
-      font-size: 1.3rem;
+    &__price {
+      font-size: 2rem;
+      padding: 0.5em 0;
     }
     &__desc {
-      font-weight: normal;
+      padding: 0.5em 0;
+    }
+    &__btn {
+      padding: 2rem;
     }
   }
 }

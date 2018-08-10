@@ -1,6 +1,6 @@
 .header {
   width:100%;
-  background: lighten($primary, 75%);
+  background: $white;
   border-bottom: 0.0625em solid $primary-dark;
   &__wrap {
     display: flex;

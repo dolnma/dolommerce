@@ -95,9 +95,9 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			'name'          => __( 'Footer Full', 'understrap' ),
 			'id'            => 'footerfull',
 			'description'   => 'Widget area below main content and above footer',
-		    'before_widget'  => '<div id="%1$s" class="footer-widget %2$s '. understrap_slbd_count_widgets( 'footerfull' ) .'">', 
+		    'before_widget'  => '<div id="%1$s" class="%2$s '. understrap_slbd_count_widgets( 'footerfull' ) .'">', 
 		    'after_widget'   => '</div><!-- .footer-widget -->', 
-		    'before_title'   => '<h3 class="widget-title">', 
+		    'before_title'   => '<h3 class="widget-title text--white">', 
 		    'after_title'    => '</h3>', 
 		) );
 

@@ -1,0 +1,25 @@
+.sr-only-focusable.pseudo-class-active,
+.sr-only-focusable.pseudo-class-focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+.btn__addtocard.pseudo-class-hover {
+  background: #e0e0e0;
+}
+
+a.pseudo-class-hover {
+  color: #2e2e2e;
+}
+
+.navbar a.pseudo-class-visited {
+  color: #545454;
+}
+
+.content-product__wrap a.pseudo-class-visited {
+  color: #545454;
+}

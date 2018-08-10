@@ -21,6 +21,13 @@ $container = get_theme_mod( 'understrap_container_type' );
         <meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+        <!-- slick -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <?php wp_head(); ?>
     </head>
 
@@ -74,7 +81,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             'menu_id'         => 'main-menu',
             'walker'          => new understrap_WP_Bootstrap_Navwalker(),
         )
-    ); 
+    );
     ?>
 
                     </div>

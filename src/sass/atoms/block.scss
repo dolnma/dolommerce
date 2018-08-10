@@ -1,0 +1,26 @@
+// Block
+//
+// This section demonstrates the use of modifiers
+//
+// default - This is the default state of a button element
+// .green - This is a button with a class modifier
+// .red - This is another button with a class modifier
+// :hover - This is a button with the hover pseudo modifier
+//
+// Markup:
+// <div class="block">Testing text</div>
+//
+// Styleguide 1.1
+
+
+.block {
+  font-size: 1rem;
+
+  ul {
+    list-style-type: none;
+    line-height: 1.2rem;
+  }
+
+  &--widget-product_categories {
+  }
+}

@@ -1,13 +1,54 @@
-// Use this file to overwrite the basic Bootstrap variables and add your own variables
-// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
-// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+// Variables
+//
+// Variables used in project
+//
+// Styleguide 2.0
+//
+// Base colors
+//
+// Colors we use for project
+//
+// $primary: #545454;
+// $secondary: #ffffff;
+// $third: #cccccc;;
+//
+// Styleguide 2.1
+
 $h-header: 4em;
 
 $w-container: 80rem;
 
-// colors
-$primary: #545454;
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.2rem;
+$font-size-p: 1rem;
+
+// 
+$primary: #9BC65F;
+$secondary: #4A4238;
+$third: #4D5359;
+$fourth: #508484;
+$fifth: #79C99E;
+
+
+$green: #156121;
+$white: #ffffff;
+$white-dark: #FAFAFA;
+$white-light: lighten($white, 50%);
+$black: #000000;
+
 $primary-dark: darken($primary, 10%);
 $primary-light: lighten($primary, 65%);
 
-$secondary: #ffffff;
+$secondary-dark: darken($secondary, 10%);
+$secondary-light: lighten($secondary, 65%);
+
+$third-dark: darken($third, 10%);
+$third-light: lighten($third, 65%);
+
+$fourth-dark: darken($fourth, 10%);
+$fourth-light: lighten($fourth, 65%);
+
+$fifth-dark: darken($fifth, 10%);
+$fifth-light: lighten($fifth, 65%);
+

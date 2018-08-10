@@ -1,0 +1,4 @@
+.footer {
+  border-top: 0.0625rem solid $primary;
+  @include linear-gradient(darken($secondary, 75%), darken($secondary, 50%), 180deg);
+}

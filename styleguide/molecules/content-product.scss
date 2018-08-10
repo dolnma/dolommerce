@@ -1,0 +1,29 @@
+.content-product {
+  padding: 1rem;
+  &__wrap {
+    padding: 1rem;
+    background: $secondary;
+    border-radius: 1rem;
+    a,
+    a:visited {
+      color: $primary;
+    }
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+      font-weight: normal;
+    }
+    &__price {
+      font-size: 1.3rem;
+    }
+    &__desc {
+      font-weight: normal;
+    }
+    &__btn {
+      padding: 2rem;
+    }
+  }
+}

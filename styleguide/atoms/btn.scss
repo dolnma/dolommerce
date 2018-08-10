@@ -1,0 +1,31 @@
+// Buttons
+//
+// Styles of buttons
+//
+// .btn__rounded - rounded
+//
+// markup:
+// <button class="btn {$modifiers}">Click me!</button>
+//
+// Styleguide 1.2
+.btn {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    &--green {
+        background: $green;
+        color: $secondary;
+    }
+}
+
+.btn__shadow {
+    box-shadow: 0px 14px 0px #071904;
+}
+
+.btn__addtocard {
+    padding: 1rem 3rem;
+    border: 0.0625rem solid $primary;
+    border-radius: 0.5rem;
+    &:hover {
+        background: lighten($primary, 55%);
+    }
+}
