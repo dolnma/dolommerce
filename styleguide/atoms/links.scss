@@ -4,3 +4,29 @@ a {
         color: darken($primary, 15%);
     }
 }
+.links {
+    &--primary {
+        a {
+            color: lighten($primary, 15%);
+            &:hover {
+                color: lighten($primary, 50%);
+            }
+        }
+    }
+    &--secondary {
+        a {
+            color: lighten($secondary, 15%);
+            &:hover {
+                color: lighten($secondary, 50%);
+            }
+        }
+    }
+    &--third {
+        a {
+            color: $third;
+            &:hover {
+                color: $third-dark;
+            }
+        }
+    }
+}

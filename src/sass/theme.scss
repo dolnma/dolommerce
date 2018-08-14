@@ -6,11 +6,11 @@
 //
 // Styleguide 2.0
 @import "assets/resetcss";
+@import "assets/normalize";
 @import "base.scss";
 @import "mixins.scss";
 //
 @import "assets/flexboxgrid";
-@import "assets/normalize";
 @import "assets/woocommerce";
 @import "theme/theme";
 @import "theme/contact-form7";
@@ -25,15 +25,15 @@
 // molecules
 //
 // Styleguide 4.0
-@import "molecules/navbar";
-@import "molecules/products";
-@import "molecules/content-product";
-@import "molecules/widget";
+@import "molecules/**/*";
+// @import "molecules/navbar";
+// @import "molecules/products";
+// @import "molecules/content-product";
+// @import "molecules/widget";
 // organism
 //
 // Styleguide 5.0
-@import "organism/header";
-@import "organism/footer";
+@import "organism/**/*";
 // template
 //
 // Styleguide 6.0

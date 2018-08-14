@@ -5,11 +5,11 @@
 // Mixins
 //
 // Styleguide 2.0
+@import "assets/resetcss";
 @import "base.scss";
 @import "mixins.scss";
 //
 @import "assets/flexboxgrid";
-@import "assets/resetcss";
 @import "assets/normalize";
 @import "assets/woocommerce";
 @import "theme/theme";

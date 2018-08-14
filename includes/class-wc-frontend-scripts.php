@@ -476,7 +476,7 @@ class WC_Frontend_Scripts {
 						'woocommerce_single_product_carousel_options', array(
 							'rtl'            => is_rtl(),
 							'animation'      => 'slide',
-							'smoothHeight'   => true,
+							'smoothHeight'   => false,
 							'directionNav'   => false,
 							'controlNav'     => 'thumbnails',
 							'slideshow'      => false,

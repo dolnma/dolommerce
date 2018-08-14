@@ -83,16 +83,18 @@ function overwrite_wc_widget() {
   }
 }
 
-// /**
-// * @return remove woocommerce support for zooming effect
-// */
+add_action('wp_enqueue_scripts', 'override_woo_frontend_scripts');
+function override_woo_frontend_scripts() {
+    wp_deregister_script('wc-single-product');
+    wp_enqueue_script('wc-single-product', get_template_directory_uri() . '/js/single-product.js', array( 'jquery' ), null, true);
+}
 
-// add_action( 'after_setup_theme', 'lavish_child_remove_woocommerce_support', 20 );
-// function lavish_child_remove_woocommerce_support() {
-//     remove_theme_support( 'wc-product-gallery-zoom' );
-//     remove_theme_support( 'wc-product-gallery-lightbox' );
-//     remove_theme_support( 'wc-product-gallery-slider' );
-// }
+add_action( 'after_setup_theme', 'lavish_child_remove_woocommerce_support', 20 );
+function lavish_child_remove_woocommerce_support() {
+    // remove_theme_support( 'wc-product-gallery-zoom' );
+    // remove_theme_support( 'wc-product-gallery-lightbox' );
+    // remove_theme_support( 'wc-product-gallery-slider' );
+}
 
 /**
  * Optimize WooCommerce Scripts
@@ -137,9 +139,3 @@ function overwrite_wc_widget() {
 // }
 
 // add_action('wp_enqueue_scripts', 'class-wc-frontend-scripts');
-
-add_action('wp_enqueue_scripts', 'override_woo_frontend_scripts');
-function override_woo_frontend_scripts() {
-    wp_deregister_script('wc-single-product');
-    wp_enqueue_script('wc-single-product', get_template_directory_uri() . '/js/single-product.js', array( 'jquery' ), null, true);
-}

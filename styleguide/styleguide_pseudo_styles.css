@@ -8,18 +8,38 @@
   clip: auto;
 }
 
+.btn-primary.pseudo-class-hover {
+  background: #82b240;
+}
+
+.btn-primary--shadow.pseudo-class-hover {
+  box-shadow: 0 0.6em 0 #3e541e;
+}
+
 .btn__addtocard.pseudo-class-hover {
-  background: #e0e0e0;
+  background: white;
 }
 
 a.pseudo-class-hover {
-  color: #2e2e2e;
+  color: #75a039;
+}
+
+.links--primary a.pseudo-class-hover {
+  color: white;
+}
+
+.links--secondary a.pseudo-class-hover {
+  color: #c9c1b8;
+}
+
+.links--third a.pseudo-class-hover {
+  color: #353a3e;
 }
 
 .navbar a.pseudo-class-visited {
-  color: #545454;
+  color: #353a3e;
 }
 
 .content-product__wrap a.pseudo-class-visited {
-  color: #545454;
+  color: #4A4238;
 }

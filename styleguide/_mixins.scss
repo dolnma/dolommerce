@@ -1,8 +1,26 @@
+@mixin linear-gradient($color-one, $color-two, $degrees) {
+  background: -moz-linear-gradient($degrees, $color-one 0%, $color-two 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, $color-one), color-stop(100%, $color-two));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient($degrees, $color-one 0%, $color-two 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient($degrees, $color-one 0%, $color-two 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient($degrees, $color-one 0%, $color-two 100%);
+  /* ie10+ */
+  background: linear-gradient($degrees, $color-one 0%, $color-two 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two', GradientType=1);
+  /* ie6-9 */
+}
+
 // Makdelongshadows
 @function makelongshadow($color) {
   $val: 0px 0px $color;
   @for $i from 1 through 200 {
-    $val: #{$val}, #{$i}px #{$i}px #{$color};
+    $val: #{$val},
+    #{$i}px #{$i}px #{$color};
   }
   @return $val;
 }
@@ -11,59 +29,94 @@
   text-shadow: makelongshadow($color);
 }
 
-@mixin headings($from: 1, $to: 6){
-    @for $i from $from through $to{
-      h#{$i}{
-        @content
-      }
+@mixin headings($from: 1, $to: 6) {
+  @for $i from $from through $to {
+    h#{$i} {
+      @content
     }
+  }
 }
 
-@mixin headings-all(){
-  h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6 {
-      @content
+@mixin headings-all() {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    @content
   }
   @include headings-sizes-ms();
 }
 
 @mixin headings-sizes-ms() {
-  h1, .h1 {font-size: ms(4)}
-  h2, .h2 {font-size: ms(3)}
-  h3, .h3 {font-size: ms(2)}
-  h4, .h4 {font-size: ms(1)}
-  h5, .h5 {font-size: ms(0)}
-  h6, .h6 {font-size: ms(-1)}
+  h1,
+  .h1 {
+    font-size: 2.4rem;
+  }
+  h2,
+  .h2 {
+    font-size: 1.6rem;
+  }
+  h3,
+  .h3 {
+    font-size: 1.6rem;
+  }
+  h4,
+  .h4 {
+    font-size: 1.4rem;
+  }
+  h5,
+  .h5 {
+    font-size: 1.2rem;
+  }
+  h6,
+  .h6 {
+    font-size: 1.1rem;
+  }
 }
 
 @include headings-all() {
   // color: green;
 }
 
-@include headings(){
-    font-family:sans-serif;
+@include headings() {
 }
 
-div{
-    @include headings(){
-      // color:red;
-    }
+div {
+  @include headings() {
+    // color:red;
+  }
 }
 
-.sweet{
-    @include headings(1,3){
-      // color:red;
-    }
-    // headings(4,6) or just headings(4)
-    @include headings(4){
-      // color:blue;
-    }
+.sweet {
+  @include headings(1, 3) {
+    // color:red;
+  } // headings(4,6) or just headings(4)
+  @include headings(4) {
+    // color:blue;
+  }
 }
+
 // Font source
-@mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false) {
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    @if $size { font-size: $size; }
-    @if $colour { color: $colour; }
-    @if $weight { font-weight: $weight; }
-    @if $lh { line-height: $lh; }
+@mixin font-source-sans($size: false, $colour: false, $weight: false, $lh: false) {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
 }

@@ -1,0 +1,27 @@
+.product__summary {
+    &__title {
+        padding: 1rem;
+    }
+    &__rating {
+        padding: 1rem;
+    }
+    &__price {
+        padding: 0.5rem 1rem;
+        font-size: 2.5rem;
+    }
+    &__meta {
+        padding: 1rem;
+    }
+    &__card {
+        padding: 1rem;
+    }
+    &__add-to-card {
+        padding: 1rem;
+    }
+    &__short-description {
+        padding: 1rem;
+    }
+    &__stock {
+        padding: 1rem;
+    }
+}

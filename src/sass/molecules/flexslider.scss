@@ -1,0 +1,14 @@
+.flexslider {
+    &-product-gallery {
+        &__wrapper {
+            max-width: 20rem;
+        }
+    }
+}
+
+/* Remove default "clear" at position 5, 9, etc. This is for 4 columns */
+ 
+.woocommerce-product-gallery .flex-control-thumbs li:nth-child(4n+1) {
+  clear: none;
+  display: none;
+}

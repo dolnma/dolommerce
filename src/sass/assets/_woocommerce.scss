@@ -1,3 +1,21 @@
 .woocommerce-loop-product__title {
     font-weight: normal;
 }
+.flex-control-nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.flex-control-thumbs {
+}
+.flex-viewport {
+    max-width: 100%; /*customize to your needs 100%*/
+    & img {
+        height: 100%;
+        width: 100%; 
+        object-fit: contain;
+    }
+}
+// .woocommerce-product-gallery__image {
+//     max-height: 30rem;
+// }

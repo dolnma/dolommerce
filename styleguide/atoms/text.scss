@@ -1,0 +1,12 @@
+.text {
+    line-height: 1.5rem;
+    &--primary {
+        color: $primary;
+    }
+    &--secondary {
+        color: $secondary;
+    }
+    &--white {
+        color: $white;
+    }
+}
