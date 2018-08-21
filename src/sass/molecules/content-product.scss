@@ -1,5 +1,9 @@
 .content-product {
   padding: 1rem;
+  img {
+    max-width: 100%;
+    object-fit: contain;
+  }
   &__wrap {
     padding: 1rem;
     background: $white;

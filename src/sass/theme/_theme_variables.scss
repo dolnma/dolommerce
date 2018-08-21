@@ -16,14 +16,22 @@
 
 $h-header: 4em;
 
-$w-container: 80rem;
+$w-container-lg: 80rem;
+
+$breakpoints: (
+	xs: 512px,
+	sm: 768px,
+	md: 896px,
+	lg: 1152px,
+	xl: 1280px
+);
 
 $font-size-h1: 2.5rem;
 $font-size-h2: 2rem;
 $font-size-h3: 1.2rem;
 $font-size-p: 1rem;
 
-// 
+//
 $primary: #9BC65F;
 $secondary: #4A4238;
 $third: #4D5359;
@@ -51,4 +59,3 @@ $fourth-light: lighten($fourth, 65%);
 
 $fifth-dark: darken($fifth, 10%);
 $fifth-light: lighten($fifth, 65%);
-

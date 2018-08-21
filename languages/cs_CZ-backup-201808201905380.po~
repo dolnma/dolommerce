@@ -1,20 +1,20 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2016-12-20 05:10+0000\n"
 "POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"PO-Revision-Date: 2018-08-20 18:43+0000\n"
+"Last-Translator: admin <esvitilna@gmail.com>\n"
+"Language-Team: Čeština\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Loco - https://localise.biz/\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
 "__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
 "_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
@@ -433,40 +433,40 @@ msgstr ""
 #: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:79
 #: woocommerce/checkout/form-pay.php:29
 msgid "Product"
-msgstr ""
+msgstr "Produkt"
 
 #: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:97
 msgid "Price"
-msgstr ""
+msgstr "Cena"
 
 #: woocommerce/cart/cart.php:38 woocommerce/cart/cart.php:103
 msgid "Quantity"
-msgstr ""
+msgstr "Množství"
 
 #: woocommerce/cart/cart.php:39 woocommerce/cart/cart.php:120
 #: woocommerce/myaccount/my-orders.php:16
 msgid "Total"
-msgstr ""
+msgstr "Celkově"
 
 #: woocommerce/cart/cart.php:92
 msgid "Available on backorder"
-msgstr ""
+msgstr "Dostupné na předobjednání"
 
 #: woocommerce/cart/cart.php:138
 msgid "Coupon:"
-msgstr ""
+msgstr "Kupón"
 
 #: woocommerce/cart/cart.php:138 woocommerce/checkout/form-coupon.php:36
 msgid "Coupon code"
-msgstr ""
+msgstr "Slevový kupón"
 
 #: woocommerce/cart/cart.php:138 woocommerce/checkout/form-coupon.php:40
 msgid "Apply Coupon"
-msgstr ""
+msgstr "Potvrdit kupón"
 
 #: woocommerce/cart/cart.php:144
 msgid "Update Cart"
-msgstr ""
+msgstr "Přepočítat objendávku"
 
 #: woocommerce/checkout/payment.php:35
 msgid ""
@@ -474,10 +474,13 @@ msgid ""
 "Please contact us if you require assistance or wish to make alternate "
 "arrangements."
 msgstr ""
+"Je nám líto, zdá se, že pro váš stát nejsou k dispozici žádné platební metody."
+"Prosím, kontaktujte nás, pokud potřebujete pomoc nebo si přejete provést náhradní"
+"uspořádání."
 
 #: woocommerce/checkout/payment.php:35
 msgid "Please fill in your details above to see available payment methods."
-msgstr ""
+msgstr "Vyplňte prosím výše uvedené údaje, abyste zjistili dostupné způsoby platby."
 
 #: woocommerce/checkout/payment.php:42
 msgid ""
@@ -488,15 +491,15 @@ msgstr ""
 
 #: woocommerce/checkout/payment.php:43
 msgid "Update totals"
-msgstr ""
+msgstr "Přepočítat celkovou cenu"
 
 #: woocommerce/checkout/form-pay.php:30
 msgid "Qty"
-msgstr ""
+msgstr "Kusů"
 
 #: woocommerce/checkout/form-pay.php:31
 msgid "Totals"
-msgstr ""
+msgstr "Celkově"
 
 #: woocommerce/checkout/form-pay.php:79
 msgid ""
@@ -507,41 +510,41 @@ msgstr ""
 
 #: woocommerce/checkout/form-coupon.php:28
 msgid "Have a coupon?"
-msgstr ""
+msgstr "Máte slevový kupón?"
 
 #: woocommerce/checkout/form-coupon.php:28
 msgid "Click here to enter your code"
-msgstr ""
+msgstr "Klikněte zde pro zadání kódu"
 
 #: woocommerce/global/form-login.php:35
 #: woocommerce/myaccount/form-lost-password.php:30
 msgid "Username or email"
-msgstr ""
+msgstr "Přihl. jméno či email"
 
 #: woocommerce/global/form-login.php:39
 #: woocommerce/myaccount/form-login.php:48
 #: woocommerce/myaccount/form-login.php:98
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: woocommerce/global/form-login.php:48
 #: woocommerce/myaccount/form-login.php:37
 #: woocommerce/myaccount/form-login.php:56
 msgid "Login"
-msgstr ""
+msgstr "Přihlášení"
 
 #: woocommerce/global/form-login.php:51 woocommerce/myaccount/form-login.php:58
 msgid "Remember me"
-msgstr ""
+msgstr "Zapamatovat přihl. údaje"
 
 #: woocommerce/global/form-login.php:55 woocommerce/myaccount/form-login.php:62
 msgid "Lost your password?"
-msgstr ""
+msgstr "Ztracené heslo?"
 
 #: woocommerce/global/quantity-input.php:24
 msgctxt "Product quantity input tooltip"
 msgid "Qty"
-msgstr ""
+msgstr "Kusů"
 
 #: woocommerce/myaccount/form-lost-password.php:27
 msgid ""
@@ -551,37 +554,37 @@ msgstr ""
 
 #: woocommerce/myaccount/form-lost-password.php:40
 msgid "Reset Password"
-msgstr ""
+msgstr "Obnovit heslo"
 
 #: woocommerce/myaccount/form-login.php:44
 msgid "Username or email address"
-msgstr ""
+msgstr "Přihl. jméno či email"
 
 #: woocommerce/myaccount/form-login.php:75
 #: woocommerce/myaccount/form-login.php:112
 msgid "Register"
-msgstr ""
+msgstr "Registrovat"
 
 #: woocommerce/myaccount/form-login.php:84
 msgid "Username"
-msgstr ""
+msgstr "Přihl. jméno"
 
 #: woocommerce/myaccount/form-login.php:91
 #: woocommerce/myaccount/form-edit-account.php:40
 msgid "Email address"
-msgstr ""
+msgstr "Email"
 
 #: woocommerce/myaccount/form-login.php:105
 msgid "Anti-spam"
-msgstr ""
+msgstr "Anti-spam"
 
 #: woocommerce/myaccount/form-edit-account.php:30
 msgid "First name"
-msgstr ""
+msgstr "Křestní jméno"
 
 #: woocommerce/myaccount/form-edit-account.php:34
 msgid "Last name"
-msgstr ""
+msgstr "Příjmení"
 
 #: woocommerce/myaccount/form-edit-account.php:45
 msgid "Password Change"

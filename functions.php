@@ -4,7 +4,9 @@
  *
  * @package understrap
  */
-// vypnuti css stylu woocommerce
+/**
+ * Disable css styles from woocommerce
+ */
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 /**
  * Initialize theme default settings
@@ -73,6 +75,9 @@ require get_template_directory() . '/inc/editor.php';
 
 add_action( 'widgets_init', 'overwrite_wc_widget', 15 );
 
+/**
+* Overwrite widget Product_Categories (footer)
+*/
 function overwrite_wc_widget() {
   if ( class_exists( 'WC_Widget_Product_Categories' ) ) {
 
@@ -83,12 +88,18 @@ function overwrite_wc_widget() {
   }
 }
 
+/**
+* Overwrite single-product.js
+*/
 add_action('wp_enqueue_scripts', 'override_woo_frontend_scripts');
 function override_woo_frontend_scripts() {
     wp_deregister_script('wc-single-product');
     wp_enqueue_script('wc-single-product', get_template_directory_uri() . '/js/single-product.js', array( 'jquery' ), null, true);
 }
 
+/**
+* Woocommerce gallery enable/disable
+*/
 add_action( 'after_setup_theme', 'lavish_child_remove_woocommerce_support', 20 );
 function lavish_child_remove_woocommerce_support() {
     // remove_theme_support( 'wc-product-gallery-zoom' );
@@ -97,45 +108,28 @@ function lavish_child_remove_woocommerce_support() {
 }
 
 /**
- * Optimize WooCommerce Scripts
- * Remove WooCommerce Generator tag, styles, and scripts from non WooCommerce pages.
- */
+* Hide title on store page (homepage) woocommerce
+*/
 
 
+if ( is_front_page() && is_home() ) {
+  // Default homepage
+  add_filter( 'woocommerce_show_page_title' , 'woo_hide_page_title' );
+  } elseif ( is_front_page()){
+  //Static homepage
+  } elseif ( is_home()){
+  
+  //Blog page
+  } else {
+  
+  //everything else
+  }
 
-// add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles' );
+  function woo_hide_page_title() {	
+    return false;	
+  } 
 
-// function child_manage_woocommerce_styles() {
-// 	//remove generator meta tag
-// 	remove_action( 'wp_head', array( $GLOBALS['woocommerce'], 'generator' ) );
-
-// 	//first check that woo exists to prevent fatal errors
-// 	if ( function_exists( 'is_woocommerce' ) ) {
-// 		//dequeue scripts and styles
-// 		if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
-// 			wp_dequeue_style( 'woocommerce_frontend_styles' );
-// 			wp_dequeue_style( 'woocommerce_fancybox_styles' );
-// 			wp_dequeue_style( 'woocommerce_chosen_styles' );
-// 			wp_dequeue_style( 'woocommerce_prettyPhoto_css' );
-// 			wp_dequeue_script( 'wc_price_slider' );
-// 			wp_dequeue_script( 'wc-single-product' );
-// 			wp_dequeue_script( 'wc-add-to-cart' );
-// 			wp_dequeue_script( 'wc-cart-fragments' );
-// 			wp_dequeue_script( 'wc-checkout' );
-// 			wp_dequeue_script( 'wc-add-to-cart-variation' );
-// 			wp_dequeue_script( 'wc-single-product' );
-// 			wp_dequeue_script( 'wc-cart' );
-// 			wp_dequeue_script( 'wc-chosen' );
-// 			wp_dequeue_script( 'woocommerce' );
-// 			wp_dequeue_script( 'prettyPhoto' );
-// 			wp_dequeue_script( 'prettyPhoto-init' );
-// 			wp_dequeue_script( 'jquery-blockui' );
-// 			wp_dequeue_script( 'jquery-placeholder' );
-// 			wp_dequeue_script( 'fancybox' );
-// 			wp_dequeue_script( 'jqueryui' );
-// 		}
-// 	}
-
-// }
-
-// add_action('wp_enqueue_scripts', 'class-wc-frontend-scripts');
+/**
+* Remove number of results on the homepage
+*/
+remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );

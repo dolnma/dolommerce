@@ -1,0 +1,14 @@
+.tabs {
+    padding-top: 3rem;
+    width: 100%;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        background: $third;
+        padding: 1rem;
+        &:hover {
+            color: lighten($third, 50%);
+        }
+    }
+}

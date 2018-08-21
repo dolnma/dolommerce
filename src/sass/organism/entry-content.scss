@@ -1,7 +1,10 @@
 .entry-content {
-    img {
-        max-width: 100%;
-        min-width: 300px;
-        height: auto;
+    background: $white;
+    line-height: 1.6rem;
+    @include break(sm) {
+      padding: 2rem;
+    }
+    h2 {
+        padding: 2rem 0;
     }
 }
