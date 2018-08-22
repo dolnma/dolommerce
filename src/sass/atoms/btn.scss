@@ -27,7 +27,9 @@
         }
     }
 }
-
+.btn__close {
+    font-size: 3rem;
+}
 .btn__addtocard {
     padding: 1rem 3rem;
     border: 0.0625rem solid $primary;
@@ -35,4 +37,7 @@
     &:hover {
         background: lighten($primary, 55%);
     }
+}
+.btn__fixed {
+    width: 100%;
 }

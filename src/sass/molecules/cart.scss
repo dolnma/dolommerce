@@ -68,6 +68,9 @@
   }
 
   &__bottom {
-    display: flex;
+    padding: 2rem 0;
+    &__wrap {
+      display: flex;
+    }
   }
 }

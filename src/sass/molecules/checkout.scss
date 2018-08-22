@@ -1,0 +1,19 @@
+.checkout {
+    &__btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @include break(sm) {
+            justify-content: flex-end;
+        }
+        &__fixed {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            @include break(sm) {
+                position: relative;
+            }
+        }
+    }
+}

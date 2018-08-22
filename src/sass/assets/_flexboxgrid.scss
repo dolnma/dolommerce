@@ -29,19 +29,19 @@ html {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: $w-container-xs;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: $w-container-sm;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: $w-container-md;
   }
 }
 
@@ -62,8 +62,8 @@ html {
 .row {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  // -ms-flex-wrap: wrap;
+  // flex-wrap: wrap;
   // margin-right: -15px;
   // margin-left: -15px;
 }
