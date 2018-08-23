@@ -353,31 +353,41 @@ jQuery( function( $ ) {
  *
  * Learn more: https://git.io/vWdr2
  */
-( function() {
-	var isWebkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
-	    isOpera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,
-	    isIe     = navigator.userAgent.toLowerCase().indexOf( 'msie' )   > -1;
+// ( function() {
+// 	var isWebkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
+// 	    isOpera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,
+// 	    isIe     = navigator.userAgent.toLowerCase().indexOf( 'msie' )   > -1;
 
-	if ( ( isWebkit || isOpera || isIe ) && document.getElementById && window.addEventListener ) {
-		window.addEventListener( 'hashchange', function() {
-			var id = location.hash.substring( 1 ),
-				element;
+// 	if ( ( isWebkit || isOpera || isIe ) && document.getElementById && window.addEventListener ) {
+// 		window.addEventListener( 'hashchange', function() {
+// 			var id = location.hash.substring( 1 ),
+// 				element;
 
-			if ( ! ( /^[A-z0-9_-]+$/.test( id ) ) ) {
-				return;
-			}
+// 			if ( ! ( /^[A-z0-9_-]+$/.test( id ) ) ) {
+// 				return;
+// 			}
 
-			element = document.getElementById( id );
+// 			element = document.getElementById( id );
 
-			if ( element ) {
-				if ( ! ( /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) ) ) {
-					element.tabIndex = -1;
-				}
+// 			if ( element ) {
+// 				if ( ! ( /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) ) ) {
+// 					element.tabIndex = -1;
+// 				}
 
-				element.focus();
-			}
-		}, false );
-	}
-})();
+// 				element.focus();
+// 			}
+// 		}, false );
+// 	}
+// })();
 
+jQuery(document).ready(function ($) {
+
+	$('.menu-toggle').click(function() {
+
+		$('.navbar ul').toggleClass('opening');
+		$(this).toggleClass('open');
+	  
+	  })
+
+});
 !function(){var e=-1<navigator.userAgent.toLowerCase().indexOf("webkit"),t=-1<navigator.userAgent.toLowerCase().indexOf("opera"),n=-1<navigator.userAgent.toLowerCase().indexOf("msie");(e||t||n)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var e,t=location.hash.substring(1);/^[A-z0-9_-]+$/.test(t)&&(e=document.getElementById(t))&&(/^(?:a|select|input|button|textarea)$/i.test(e.tagName)||(e.tabIndex=-1),e.focus())},!1)}();
