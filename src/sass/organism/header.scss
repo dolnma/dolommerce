@@ -8,6 +8,12 @@
     align-content: center;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 2;
+    background: $secondary;
+    @include break(sm) {
+      position: relative;
+    }
   }
   &__navbar {
     position: relative;

@@ -68,10 +68,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <!-- end custom logo -->
 
                     </div>
-                    <div class="header__navbar">
 
-                        <!-- The WordPress Menu goes here -->
-                        <?php wp_nav_menu(
+                    <!-- The WordPress Menu goes here -->
+                    <?php wp_nav_menu(
         array(
             'theme_location'  => 'primary',
             'container_class' => 'navbar',
@@ -83,9 +82,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         )
     );
     ?>
-                        <div class="menu-toggle">
-                            <div class="hamburger"></div>
-                        </div>
+                    <div class="navbar-toggle">
+                        <div class="navbar__icon"></div>
 
 
                     </div>

@@ -346,48 +346,29 @@ jQuery( function( $ ) {
 	}
 })();
 
-/**
- * File skip-link-focus-fix.js.
- *
- * Helps with accessibility for keyboard only users.
- *
- * Learn more: https://git.io/vWdr2
- */
-// ( function() {
-// 	var isWebkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
-// 	    isOpera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,
-// 	    isIe     = navigator.userAgent.toLowerCase().indexOf( 'msie' )   > -1;
-
-// 	if ( ( isWebkit || isOpera || isIe ) && document.getElementById && window.addEventListener ) {
-// 		window.addEventListener( 'hashchange', function() {
-// 			var id = location.hash.substring( 1 ),
-// 				element;
-
-// 			if ( ! ( /^[A-z0-9_-]+$/.test( id ) ) ) {
-// 				return;
-// 			}
-
-// 			element = document.getElementById( id );
-
-// 			if ( element ) {
-// 				if ( ! ( /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) ) ) {
-// 					element.tabIndex = -1;
-// 				}
-
-// 				element.focus();
-// 			}
-// 		}, false );
-// 	}
-// })();
-
+// Navbar navbar-toggle mobile menu
+// molecules/navbar.scss
 jQuery(document).ready(function ($) {
 
-	$('.menu-toggle').click(function() {
+	$('.navbar-toggle').click(function () {
 
 		$('.navbar ul').toggleClass('opening');
 		$(this).toggleClass('open');
-	  
-	  })
+
+	})
+
+});
+
+jQuery(window).resize(function ($) {
+
+	if (jQuery(window).width() > 768) {
+
+		jQuery('.navbar ul').removeClass('opening');
+		jQuery('.navbar-toggle').removeClass('open');
+		console.log("v poradku");
+	} else {
+
+	}
 
 });
 !function(){var e=-1<navigator.userAgent.toLowerCase().indexOf("webkit"),t=-1<navigator.userAgent.toLowerCase().indexOf("opera"),n=-1<navigator.userAgent.toLowerCase().indexOf("msie");(e||t||n)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var e,t=location.hash.substring(1);/^[A-z0-9_-]+$/.test(t)&&(e=document.getElementById(t))&&(/^(?:a|select|input|button|textarea)$/i.test(e.tagName)||(e.tabIndex=-1),e.focus())},!1)}();
