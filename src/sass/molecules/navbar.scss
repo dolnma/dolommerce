@@ -27,6 +27,7 @@
             left: 0;
             z-index: 2;
             width: 100%;
+            border-bottom: 0.0625rem solid lighten($secondary, 15%);
         }
         @include break(sm) {
             display: flex;
@@ -35,6 +36,7 @@
         }
     }
     & li {
+        border-top: 0.0625rem solid lighten($secondary, 15%);
         @include break(sm) {
             flex: 1 1 auto;
             border: none;

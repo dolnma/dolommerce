@@ -22,6 +22,10 @@ time, mark, audio, video {
 input, button {
   outline: 0;
 }
+/* This will remove the default tap-highlight function (blue outline, shadow) of the webkit browser (on any mobile). Seems to work mostly on Android phones, but it does have affect on iOS devices as well. */
+* {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {

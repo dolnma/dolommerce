@@ -33,3 +33,49 @@
 .woocommerce-hidetitle {
     display: none;
 }
+
+
+.form-row {
+
+    label {
+        display: block;
+
+        &.checkbox {
+            display: inline;
+        }
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .input-text {
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+.form-row-first,
+.form-row-last {
+    width: 47%;
+    overflow: visible;
+}
+
+.form-row-first {
+    float: left;
+
+    /*rtl:raw:
+    float: right;
+    */
+}
+
+.form-row-last {
+    float: right;
+}
+
+.form-row-wide {
+    clear: both;
+}
+.form-group {
+    padding: 0.4rem 0;
+}

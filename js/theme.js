@@ -360,7 +360,11 @@ jQuery(document).ready(function ($) {
 	$('.header__icon--open').click(function () {
 
 		$('.header__searchinput').toggleClass('active');
-		// $('.header__logo').toggleClass('disable');
+		if (jQuery(window).width() < 600) {
+			$('.header__logo').toggleClass('disable');
+		} else {
+		}
+
 		$('.navbar').toggleClass('disable');
 		$(".header__searchinput").find('input[type="text"]').focus();
 
@@ -376,7 +380,10 @@ jQuery(document).ready(function ($) {
 	$('.header__icon--close').click(function () {
 
 		$('.header__searchinput').toggleClass('active');
-		// $('.header__logo').toggleClass('disable');
+		if (jQuery(window).width() < 600) {
+			$('.header__logo').toggleClass('disable');
+		} else {
+		}
 		$('.navbar').toggleClass('disable');
 
 		$('.icon-header__search').toggleClass('disable');
@@ -395,8 +402,8 @@ jQuery(window).resize(function ($) {
 
 	if (jQuery(window).width() > 768) {
 
-		jQuery('.navbar ul').removeClass('opening');
-		jQuery('.navbar-toggle').removeClass('open');
+		jQuery('.navbar ul').removeClass('active');
+		jQuery('.navbar-toggle').removeClass('active');
 		console.log("v poradku");
 	} else {
 

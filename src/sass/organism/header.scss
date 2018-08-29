@@ -27,6 +27,10 @@
     &.active {
       display: block;
       flex-grow: 1;
+      margin-left: 0;
+      @include break(xs) {
+        margin-left: 2rem;
+      }
     }
   }
   .header__navbar {
@@ -60,7 +64,7 @@
 }
 
 .header__logo {
-  display: none;
+  display: block;
   @include break(xs) {
     display: block;
   }
