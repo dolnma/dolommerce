@@ -1,45 +1,5 @@
 .navbar {
-    @include break(sm) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        background: $secondary;
-    }
-    & ul {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        display: none;
-        @include break(sm) {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-    }
-    & ul.opening {
-        display: block;
-        position: fixed;
-        top: $h-header;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-    }
-    & li {
-        @include break(sm) {
-            flex: 1 1 auto;
-            border: none;
-        }
-        a {
-            padding: 1.5em 1.3em 1.5em 1.3em;
-            margin: 0;
-            border: none;
-            background: $secondary;
-        }
-    }
-    & li:last-child {
-        border-bottom: none;
-    }
+    display: block;
     & a {
         color: darken($white, 15%);
         background: $secondary;
@@ -55,13 +15,71 @@
             }
         }
     }
+    & ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        display: none;
+        &.active {
+            display: block;
+            position: fixed;
+            top: $h-header;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+        }
+        @include break(sm) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+    & li {
+        @include break(sm) {
+            flex: 1 1 auto;
+            border: none;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+        a {
+            padding: 1.5em 1.3em 1.5em 1.3em;
+            margin: 0;
+            border: none;
+            background: $secondary;
+        }
+    }
+    &.disable {
+        display: none;
+    }
+    @include break(sm) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        background: $secondary;
+    }
+}
+
+.navbar__search {
+    padding: 0 1rem;
+    position: relative;
+    &__icon {
+        position: absolute;
+        right: 2rem;
+        background: none;
+    }
+}
+
+.navbar__searchinput {
+    width: 100%;
 }
 
 .navbar-toggle {
-    position: absolute;
-    top: $h-header / 2;
-    right: 2em;
-    cursor: pointer;
+    display: block;
+    &.disable {
+        display: none;
+    }
     @include break(sm) {
         display: none;
     }
@@ -90,16 +108,16 @@
     transform: translateY(4px);
 }
 
-.open .navbar__icon {
+.active .navbar__icon {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-.open .navbar__icon::before {
+.active .navbar__icon::before {
     display: none;
 }
 
-.open .navbar__icon::after {
+.active .navbar__icon::after {
     -webkit-transform: translateY(-1px) rotate(-90deg);
     transform: translateY(-1px) rotate(-90deg);
 }

@@ -1,3 +1,10 @@
+  .form {
+    &__search {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  }
   .form-outer,
   .form-inner {
     list-style-type: none;

@@ -1,0 +1,14 @@
+.icon {
+    &-header {
+        &__search {
+            display: block;
+            font-size: 1.4rem;
+            &.disable {
+                display: none;
+            }
+        }
+        &__close {
+            margin-left: -3rem;
+        }
+    }
+}

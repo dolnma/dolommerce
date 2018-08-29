@@ -26,6 +26,9 @@ $container = get_theme_mod( 'understrap_container_type' );
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <!-- Awesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+            crossorigin="anonymous">
 
         <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
         <?php wp_head(); ?>
@@ -68,9 +71,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <!-- end custom logo -->
 
                     </div>
+                    <div class="header__right">
 
-                    <!-- The WordPress Menu goes here -->
-                    <?php wp_nav_menu(
+                        <!-- The WordPress Menu goes here -->
+                        <?php wp_nav_menu(
         array(
             'theme_location'  => 'primary',
             'container_class' => 'navbar',
@@ -82,10 +86,24 @@ $container = get_theme_mod( 'understrap_container_type' );
         )
     );
     ?>
-                    <div class="navbar-toggle">
-                        <div class="navbar__icon"></div>
+                        <div class="header__searchinput">
+                            <?php 
+                        get_search_form();
+                        ?>
+                        </div>
 
 
+                        <div class="header__icon">
+                            <div class="navbar__search">
+                                <i class="header__icon--open icon-header__search fa fa-search"></i>
+                                <div class="header__icon--close text--primary">&times;</div>
+                            </div>
+
+                            <div class="navbar-toggle">
+                                <div class="navbar__icon"></div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,3 +2,10 @@ input {
     border: 0.0625rem solid $primary;
     padding: 1rem;
 }
+
+.input {
+    &--header-search {
+        width: 100%;
+        margin-left: 2rem;
+    }
+}

@@ -1,11 +1,18 @@
 .header {
-  width:100%;
+  width: 100%;
   background: $secondary;
   border-bottom: 0.0625em solid $primary-dark;
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
+  }
   &__wrap {
     display: flex;
     height: $h-header;
     align-content: center;
+    color: $white;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -15,14 +22,54 @@
       position: relative;
     }
   }
-  &__navbar {
+  .header__searchinput {
+    display: none;
+    &.active {
+      display: block;
+      flex-grow: 1;
+    }
+  }
+  .header__navbar {
     position: relative;
+  }
+  .header__icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 2em;
+    cursor: pointer;
+    &--close {
+      display: none;
+      font-size: 2rem;
+      &.active {
+        display: block;
+      }
+      &.disable {
+        display: none;
+      }
+    }
+    &.active {
+      position: relative;
+      right: 0;
+    }
+    @include break(sm) {
+      position: relative;
+      right: 0;
+    }
   }
 }
 
 .header__logo {
+  display: none;
+  @include break(xs) {
+    display: block;
+  }
   &-img img {
     max-width: 10em;
     height: auto;
+  }
+  &.disable {
+    display: none;
+    flex-grow: 0;
   }
 }
