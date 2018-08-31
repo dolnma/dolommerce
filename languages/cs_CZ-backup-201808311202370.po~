@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2016-12-20 05:10+0000\n"
 "POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
-"PO-Revision-Date: 2018-08-20 18:43+0000\n"
+"PO-Revision-Date: 2018-08-20 19:05+0000\n"
 "Last-Translator: admin <esvitilna@gmail.com>\n"
 "Language-Team: Čeština\n"
 "Language: cs_CZ\n"
@@ -100,6 +100,7 @@ msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: comments.php:36 comments.php:59
 msgid "Comment navigation"
@@ -416,19 +417,19 @@ msgstr ""
 
 #: woocommerce/cart/mini-cart.php:85
 msgid "View Cart"
-msgstr ""
+msgstr "Zobrazit košík"
 
 #: woocommerce/cart/mini-cart.php:86
 msgid "Checkout"
-msgstr ""
+msgstr "Objednat"
 
 #: woocommerce/cart/cart-empty.php:28
 msgid "Your cart is currently empty."
-msgstr ""
+msgstr "Váš košík je prázný."
 
 #: woocommerce/cart/cart-empty.php:36
 msgid "Return To Shop"
-msgstr ""
+msgstr "Vrátit do obchodu"
 
 #: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:79
 #: woocommerce/checkout/form-pay.php:29
@@ -474,13 +475,14 @@ msgid ""
 "Please contact us if you require assistance or wish to make alternate "
 "arrangements."
 msgstr ""
-"Je nám líto, zdá se, že pro váš stát nejsou k dispozici žádné platební metody."
-"Prosím, kontaktujte nás, pokud potřebujete pomoc nebo si přejete provést náhradní"
-"uspořádání."
+"Je nám líto, zdá se, že pro váš stát nejsou k dispozici žádné platební "
+"metody.Prosím, kontaktujte nás, pokud potřebujete pomoc nebo si přejete "
+"provést náhradníuspořádání."
 
 #: woocommerce/checkout/payment.php:35
 msgid "Please fill in your details above to see available payment methods."
-msgstr "Vyplňte prosím výše uvedené údaje, abyste zjistili dostupné způsoby platby."
+msgstr ""
+"Vyplňte prosím výše uvedené údaje, abyste zjistili dostupné způsoby platby."
 
 #: woocommerce/checkout/payment.php:42
 msgid ""
@@ -521,14 +523,12 @@ msgstr "Klikněte zde pro zadání kódu"
 msgid "Username or email"
 msgstr "Přihl. jméno či email"
 
-#: woocommerce/global/form-login.php:39
-#: woocommerce/myaccount/form-login.php:48
+#: woocommerce/global/form-login.php:39 woocommerce/myaccount/form-login.php:48
 #: woocommerce/myaccount/form-login.php:98
 msgid "Password"
 msgstr "Heslo"
 
-#: woocommerce/global/form-login.php:48
-#: woocommerce/myaccount/form-login.php:37
+#: woocommerce/global/form-login.php:48 woocommerce/myaccount/form-login.php:37
 #: woocommerce/myaccount/form-login.php:56
 msgid "Login"
 msgstr "Přihlášení"
@@ -633,6 +633,7 @@ msgid "%s for %s item"
 msgid_plural "%s for %s items"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: woocommerce/myaccount/my-orders.php:72 woocommerce/myaccount/orders.php:68
 msgid "Pay"
@@ -731,6 +732,7 @@ msgid "based on %s customer rating"
 msgid_plural "based on %s customer ratings"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: woocommerce/single-product/rating.php:42
 #, php-format
@@ -738,6 +740,7 @@ msgid "%s customer review"
 msgid_plural "%s customer reviews"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #. Name of the theme
 msgid "UnderStrap"
@@ -765,3 +768,7 @@ msgstr ""
 #. Author URI of the theme
 msgid "http://www.holgerkoenemann.de"
 msgstr ""
+
+#
+msgid "Your order"
+msgstr "Vaše objednávka"

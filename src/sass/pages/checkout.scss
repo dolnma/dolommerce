@@ -1,2 +1,11 @@
 .checkout {
+    &__review {
+        padding: 1rem 0;
+        &__title {
+            padding-bottom: 2rem; 
+        }
+        @include break(md) {
+            padding: 0 0 0 2rem;
+        }
+    }
 }
