@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2016-12-20 05:10+0000\n"
 "POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
-"PO-Revision-Date: 2018-08-31 12:02+0000\n"
+"PO-Revision-Date: 2018-08-31 12:22+0000\n"
 "Last-Translator: admin <esvitilna@gmail.com>\n"
 "Language-Team: Čeština\n"
 "Language: cs_CZ\n"
@@ -401,7 +401,7 @@ msgstr ""
 
 #: woocommerce/cart/proceed-to-checkout-button.php:27
 msgid "Proceed to Checkout"
-msgstr ""
+msgstr "Pokračovat v objednávce"
 
 #: woocommerce/cart/mini-cart.php:49 woocommerce/cart/cart.php:60
 msgid "Remove this item"
@@ -768,3 +768,6 @@ msgstr ""
 #. Author URI of the theme
 msgid "http://www.holgerkoenemann.de"
 msgstr ""
+
+msgid "Your order"
+msgstr "Vaše objednávka"

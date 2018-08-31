@@ -762,3 +762,7 @@ msgstr ""
 #. Author URI of the theme
 msgid "http://www.holgerkoenemann.de"
 msgstr ""
+
+#
+msgid "Your order"
+msgstr ""
