@@ -30,7 +30,7 @@ if ( empty( WC()->cart->applied_coupons ) ) {
 }
 ?>
 
-<form class="checkout_coupon" method="post" style="display:none">
+<form class="checkout__coupon" method="post" style="display:none">
 
 	<p class="form-row form-row-first">
 		<input type="text" name="coupon_code" class="form-control" placeholder="<?php esc_attr_e( 'Coupon code', 'understrap' ); ?>" id="coupon_code" value="" />
