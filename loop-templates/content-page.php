@@ -8,7 +8,7 @@
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<header class="entry__header">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 

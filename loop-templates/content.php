@@ -7,7 +7,8 @@
 
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class(); ?> id="post-
+	<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
@@ -16,9 +17,9 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 
-			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
+		<div class="entry-meta">
+			<?php understrap_posted_on(); ?>
+		</div><!-- .entry-meta -->
 
 		<?php endif; ?>
 

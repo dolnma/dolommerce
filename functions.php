@@ -72,12 +72,10 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load JQUERY Script (CDN)
  */
 function replace_jquery() {
-	if (!is_admin()) {
 		// comment out the next two lines to load the local copy of jQuery
 		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js');
-		wp_enqueue_script('jquery');
-	}
+    wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js');
+    wp_enqueue_script('jquery');
 }
 add_action('init', 'replace_jquery');
 /**
@@ -162,3 +160,5 @@ function custom_woocommerce_billing_fields($fields)
 
     return $fields;
 }
+
+add_filter( 'wc_add_to_cart_message_html', '__return_null' );
