@@ -23,8 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-	<a href="<?php echo esc_url( wc_get_checkout_url() );?>" class="checkout__btn checkout__btn__fixed">
+	<a href="<?php echo esc_url( wc_get_checkout_url() );?>">
 		<button class="btn btn-primary btn-primary--shadow btn__fixed">
-			<?php esc_html_e( 'Proceed to checkout', 'understrap' ); ?>
+			<?php esc_html_e( 'Proceed to Checkout', 'understrap' ); ?>
 		</button>
 	</a>

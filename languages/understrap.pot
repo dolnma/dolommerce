@@ -766,3 +766,11 @@ msgstr ""
 #
 msgid "Your order"
 msgstr ""
+
+#
+msgid "$"
+msgstr ""
+
+#
+msgid "Added to cart"
+msgstr ""

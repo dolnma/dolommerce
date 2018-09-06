@@ -26,6 +26,20 @@
             }
         }
     }
+    &-secondary {
+        padding: 1em;
+        background: $secondary;
+        color: darken($white, 15%);
+        &:hover {
+            background: darken($secondary, 15%);
+        }
+        &--shadow {
+            box-shadow: 0 0.6em 0 darken($secondary, 50%);
+            &:hover {
+                box-shadow: 0 0.6em 0 darken($secondary, 25%);
+            }
+        }
+    }
 }
 .btn__close {
     font-size: 3rem;

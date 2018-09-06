@@ -160,5 +160,3 @@ function custom_woocommerce_billing_fields($fields)
 
     return $fields;
 }
-
-add_filter( 'wc_add_to_cart_message_html', '__return_null' );

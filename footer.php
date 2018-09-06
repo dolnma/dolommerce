@@ -11,32 +11,34 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-	<div class="wrapper footer" id="wrapper-footer">
+<div class="wrapper footer" id="wrapper-footer">
 
-		<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="<?php echo esc_attr( $container ); ?>">
 
-			<div class="row">
+		<div class="row">
 
-				<div class="col-md-12">
+			<div class="col-md-12">
 
-					<?php get_sidebar( 'footerfull' ); ?>
-
-				</div>
-				<!--col end -->
+				<?php get_sidebar( 'footerfull' ); ?>
 
 			</div>
-			<!-- row end -->
-
+			<!--col end -->
 
 		</div>
-		<!-- container end -->
+		<!-- row end -->
+
 
 	</div>
-	<!-- wrapper end -->
+	<!-- container end -->
 
-	</div>
-	<!-- #page we need this extra closing tag here -->
+</div>
+<!-- wrapper end -->
 
-	<?php wp_footer(); ?>
+</div>
+<!-- #page we need this extra closing tag here -->
 
-	</body></html>
+<?php wp_footer(); ?>
+
+	</body>
+
+	</html>

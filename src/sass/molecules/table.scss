@@ -10,8 +10,16 @@
     vertical-align: top;
     border-top: 1px solid #dee2e6;
   }
-
-  .table--checkout th, td {
+.table--modal {
+  & td, th {
+    width: 0;
+    text-align: left;
+  }
+  & th {
+    font-weight: bold;
+  }
+}
+  .table--checkout th, .table--checkout td {
     width: 65%;
     text-align: left;
   }
