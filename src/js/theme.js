@@ -82,7 +82,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-	var modal = $('#myModal');
+	var modal = $('#AddToCartModal');
 
 	// Get the button that opens the modal
 	// var btn = $('.add_to_cart_button')[0];
@@ -181,7 +181,7 @@ jQuery(document).ready(function ($) {
 							'</td></tr>';
 					});
 
-					$('#records_table').html(trHTML);
+					$('#AddToCartTable').html(trHTML);
 				}
 			});
 		});

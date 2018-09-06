@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="hfeed site" id="page">
 
         <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <div id="AddToCartModal" class="modal">
 
             <!-- Modal content -->
             <div class="modal__content">
@@ -58,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </th>
                         </tr>
                     </thead>
-                    <tbody id="records_table">
+                    <tbody id="AddToCartTable">
                     </tbody>
                 </table>
                 <div class="row modal__content__product">
@@ -66,8 +66,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <?php esc_attr_e( 'Price', 'understrap' ); ?>:&nbsp;<div class='get_cart_total text--primary'></div>&nbsp;<?php esc_attr_e( '$', 'understrap' ); ?>
                 </div>
                 <div class="row modal__content__checkout col-12">
-                <div class="col-4"><a href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>"><button class="btn btn-secondary btn-secondary--shadow btn__fixed"><?php esc_attr_e( 'Return To Shop', 'understrap' ) ?></button></a></div>
-                <div class="col-8 pad-l"><?php do_action( 'woocommerce_proceed_to_checkout' ); ?></div>               
+                <div class="col-12 col-sm-12"><a href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>"><button class="btn btn-secondary btn-secondary--shadow btn__fixed"><?php esc_attr_e( 'Return To Shop', 'understrap' ) ?></button></a></div>
+                <div class="col-12 col-sm-12 modal__content__checkout__continue"><?php do_action( 'woocommerce_proceed_to_checkout' ); ?></div>               
             </div>
             </div>
         </div>

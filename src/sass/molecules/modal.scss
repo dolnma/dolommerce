@@ -13,11 +13,11 @@
 
 /* Modal Content/Box */
 .modal__content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 4rem;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    background-color: $white;
+    margin: ($h-header + 2) auto; /* 15% from the top and centered */
+    padding: 3rem 2rem 2rem 2rem;
+    border: 0.0625rem solid $secondary;
+    width: 100%; /* Could be more or less, depending on screen size */
     position: relative;
 
     &__product {
@@ -25,6 +25,17 @@
     }
     &__checkout {
         margin: 2rem 0;
+        &__continue {
+            padding: 2rem 0;
+            @include break(sm) {
+                padding:0 0 0 1rem;
+            }
+        }
+    }
+    @include break(sm) {
+        width: 80%;
+        padding: 4rem;
+        margin: 15% auto;
     }
 }
 
@@ -32,8 +43,8 @@
 .close {
     position: absolute;
     color: #aaa;
-    right: 1.5rem;
-    top: 0.8rem;
+    right: 2rem;
+    top: 1rem;
     font-size: 28px;
     font-weight: bold;
 }
