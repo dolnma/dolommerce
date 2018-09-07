@@ -81,3 +81,14 @@
 .form-group {
     padding: 0.4rem 0;
 }
+
+.added_to_cart {
+    display: none;
+}
+
+.woocommerce-error {
+    padding: 2rem;
+    background: $white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}

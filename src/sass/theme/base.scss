@@ -1,0 +1,12 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.pad-l {
+    padding-left: 1rem;
+}
+.wrapper {
+    margin-top: $h-header;
+    @include break(sm) {
+        margin-top: 0;
+    }
+}

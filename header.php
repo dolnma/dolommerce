@@ -65,16 +65,14 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php esc_attr_e( 'Added to cart', 'understrap' ); ?>&nbsp;<div class="get_cart_name"></div>&nbsp;-&nbsp; 
                     <?php esc_attr_e( 'Price', 'understrap' ); ?>:&nbsp;<div class='get_cart_total text--primary'></div>&nbsp;<?php esc_attr_e( '$', 'understrap' ); ?>
                 </div>
-                <div class="row modal__content__checkout col-12">
-                <div class="col-12 col-sm-12"><a href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>"><button class="btn btn-secondary btn-secondary--shadow btn__fixed"><?php esc_attr_e( 'Return To Shop', 'understrap' ) ?></button></a></div>
-                <div class="col-12 col-sm-12 modal__content__checkout__continue"><?php do_action( 'woocommerce_proceed_to_checkout' ); ?></div>               
+                <div class="row modal__content__checkout col-12 col-sm-12">
+                <div class="col-xs-12 col-sm-4"><a href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>"><button class="btn btn-secondary btn-secondary--shadow btn__fixed"><?php esc_attr_e( 'Return To Shop', 'understrap' ) ?></button></a></div>
+                <div class="col-xs-12 col-sm-8 modal__content__checkout__continue"><?php do_action( 'woocommerce_proceed_to_checkout' ); ?></div>               
             </div>
             </div>
         </div>
 
         <div class="header">
-
-            <div class='get_cart_total'></div>
 
             <div class="header__wrap container">
                 <div class="header__logo">

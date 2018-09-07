@@ -5,15 +5,15 @@
 // Mixins
 //
 // Styleguide 2.0
+@import "theme/mixins";
 @import "assets/resetcss";
 @import "assets/normalize";
-@import "base.scss";
-@import "mixins.scss";
 //
 @import "assets/flexboxgrid";
 @import "assets/woocommerce";
 @import "theme/theme";
 @import "theme/contact-form7";
+@import "theme/base";
 // atoms
 //
 // Styleguide 3.0
