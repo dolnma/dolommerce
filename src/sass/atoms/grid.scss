@@ -1,0 +1,17 @@
+.grid {
+    &__item {
+        padding: 2rem 0 0;
+
+        @include break(sm) {
+            &:nth-child(2n+2) {
+                padding: 2rem 0 0 2rem;
+            }
+        }
+
+        @include break($w-container-md) {
+            &:nth-child(3n+2) {
+                padding: 2rem 2rem 0;
+            }
+        }
+    }
+}

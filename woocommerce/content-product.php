@@ -27,7 +27,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-	<li class="content-product col-sm-12 col-md-6 col-lg-4" <?php post_class(); ?>>
+	<div class="content-product grid__item col-sm-12 col-md-6 col-lg-4" <?php post_class(); ?>>
 		<div class="content-product__wrap">
 
 			<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
@@ -49,4 +49,4 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 				<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
 			</div>
 		</div>
-	</li>
+</div>
