@@ -1,3 +1,4 @@
+var SiteUrl = "https://esvitilna.cz"
 // Navbar navbar-toggle mobile menu
 // molecules/navbar.scss
 jQuery(document).ready(function ($) {
@@ -65,7 +66,7 @@ jQuery(document).ready(function ($) {
 
 	$.ajax({
 		type: 'GET',
-		url: 'http://esvitilna.test:3000/wp-json/wc/v2/cart/',
+		url: SiteUrl+'/wp-json/wc/v2/cart/',
 		dataType: 'json',
 		success: function (data) {
 			$.each(data, function (i, item) {
@@ -91,19 +92,13 @@ jQuery(document).ready(function ($) {
 	// Get the <span> element that closes the modal
 	var span = $('.close')[0];
 
-	// When the user clicks on the button, open the modal
-	// btn.onclick = function () {
-	// 	modal.css("display", "block");
-	// 	console.log("clicked");
-	// }
-
 	$(document).on("click", ".add_to_cart_button", function () {
 		modal.css("display", "block");
 		console.log("modal opened");
 
 			$.ajax({
 				type: 'GET',
-				url: 'http://esvitilna.test:3000/wp-json/wc/v2/cart/',
+				url: SiteUrl+'/wp-json/wc/v2/cart/',
 				dataType: 'json',
 				success: function (data) {
 					$.each(data, function (i, item) {
@@ -125,7 +120,7 @@ jQuery(document).ready(function ($) {
 
 			$.ajax({
 				type: 'GET',
-				url: 'http://esvitilna.test:3000/wp-json/wc/v2/cart/',
+				url: SiteUrl+'/wp-json/wc/v2/cart/',
 				dataType: 'json',
 				success: function (data) {
 					$.each(data, function (i, item) {
@@ -169,7 +164,7 @@ jQuery(document).ready(function ($) {
 
 			$.ajax({
 				type: 'GET',
-				url: 'http://esvitilna.test:3000/wp-json/wc/v2/cart/',
+				url: SiteUrl+'/wp-json/wc/v2/cart/',
 				dataType: 'json',
 				success: function (response) {
 					var trHTML = '';
