@@ -35,17 +35,17 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 			<?php do_action( 'woocommerce_before_shop_loop_item_title' ); ?>
 
 			<div class="content-product__top">
-				<h2 class="content-product__top__title">
+				<div class="content-product__top__title mt-1">
 					<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
-				</h2>
-				<div class="content-product__top__price text--primary">
+				</div>
+				<div class="content-product__top__price text--primary mt-1">
 					<?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
 				</div>
 			</div>
-			<div class="content-product__top__desc text text--secondary">
+			<div class="content-product__top__desc text text--secondary mt-1">
 				<?php echo wp_trim_words( $product->get_short_description(), 20, '...' ); ?>
 			</div>
-			<div class="content-product__top__btn">
+			<div class="content-product__top__btn mt-1 pb-2">
 				<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
 			</div>
 		</div>

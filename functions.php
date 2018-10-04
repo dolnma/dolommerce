@@ -256,9 +256,11 @@ require get_template_directory() . '/inc/woocommerce.php';
  */
 function replace_jquery() {
 		// comment out the next two lines to load the local copy of jQuery
-		wp_deregister_script('jquery');
+	wp_deregister_script('jquery');
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js');
     wp_enqueue_script('jquery');
+    wp_register_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
+    wp_enqueue_script('slick');
 }
 add_action('init', 'replace_jquery');
 /**
@@ -329,6 +331,7 @@ remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 )
 
 add_filter('woocommerce_billing_fields', 'custom_woocommerce_billing_fields');
 
+// Add fields to billing
 function custom_woocommerce_billing_fields($fields)
 {
 

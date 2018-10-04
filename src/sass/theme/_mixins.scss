@@ -154,3 +154,51 @@ div {
     line-height: $lh;
   }
 }
+
+// Paddings and margins
+$sides: (
+"": "",
+"t": "top",
+"b": "bottom",
+"l": "left",
+"r": "right",
+);
+
+$unit: "rem";
+
+@each $breakName, $breakValue in $breakpoints {
+  @each $sideName, $sideValue in $sides {
+    @for $i from 0 through 10 {
+      
+      $property: if($sideName == '', '', -#{$sideValue});
+      $space: $i * 1;
+      $selector: '';
+
+      @if $breakName != "" {
+        $selector: #{$sideName}-#{$breakName}-#{$i};
+      } @else {
+        $selector: #{$sideName}-#{$i};
+      }
+
+      @if $breakName != "" {
+        @media (min-width: $breakValue) {
+          .m#{$selector} {
+            margin#{$property}: #{$space + $unit};
+          }
+  
+          .p#{$selector} {
+            padding#{$property}: #{$space + $unit};
+          }
+        }
+      } @else {
+        .m#{$selector} {
+          margin#{$property}: #{$space + $unit};
+        }
+
+        .p#{$selector} {
+          padding#{$property}: #{$space + $unit};
+        }
+      }
+    }
+  }
+}

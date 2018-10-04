@@ -65,7 +65,7 @@ jQuery(document).ready(function ($) {
 
 	$.ajax({
 		type: 'GET',
-		url: 'https://esvitilna.cz/wp-json/wc/v2/cart/',
+		url: 'http://esvitilna.test:3000/wp-json/wc/v2/cart/',
 		dataType: 'json',
 		success: function (data) {
 			$.each(data, function (i, item) {
@@ -103,7 +103,7 @@ jQuery(document).ready(function ($) {
 
 			$.ajax({
 				type: 'GET',
-				url: 'https://esvitilna.cz/wp-json/wc/v2/cart/',
+				url: 'http://esvitilna.test:3000/wp-json/wc/v2/cart/',
 				dataType: 'json',
 				success: function (data) {
 					$.each(data, function (i, item) {
@@ -125,7 +125,7 @@ jQuery(document).ready(function ($) {
 
 			$.ajax({
 				type: 'GET',
-				url: 'https://esvitilna.cz/wp-json/wc/v2/cart/',
+				url: 'http://esvitilna.test:3000/wp-json/wc/v2/cart/',
 				dataType: 'json',
 				success: function (data) {
 					$.each(data, function (i, item) {
@@ -198,6 +198,14 @@ jQuery(document).ready(function ($) {
 			modal.css("display", "none");
 		}
 	}
+
+	$('.slider__home').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		adaptiveHeight: true
+      });
 
 });
 

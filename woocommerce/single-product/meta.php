@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 ?>
-<div class="product__summary__meta">
+<div class="product__summary__meta mt-2">
 
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>
 

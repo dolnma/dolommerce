@@ -29,6 +29,6 @@ if ( ! $short_description ) {
 }
 
 ?>
-<div class="product__summary__short-description">
+<div class="product__summary__short-description mt-1">
 	<?php echo $short_description; // WPCS: XSS ok. ?>
 </div>
